@@ -13,7 +13,7 @@
 
         // 🔥 Your Firebase Config (Replace with your actual one)
         const firebaseConfig = {
-          apiKey: "AIzaSyA8eXtpj7fqeQ4lQekWdW5wJdKzMvyNCLk",
+          apiKey: "",
           authDomain: "snapjob-27b71.firebaseapp.com",
           projectId: "snapjob-27b71",
           storageBucket: "snapjob-27b71.firebasestorage.app",
