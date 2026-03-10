@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomMenu"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="5"
+    android:background="@drawable/bottom_nav_bg"
+    android:elevation="12dp"
+    android:padding="8dp"
+    android:layout_marginTop="5dp">
+
+        <!-- 🧍 Profile -->
+        <LinearLayout
+            android:id="@+id/menu_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/nav_item_selector"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#FF5722">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_profile"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:padding="2px"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="Profile"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <!-- 📘 My Requests -->
+        <LinearLayout
+            android:id="@+id/menu_requests"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/nav_item_selector"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#FF5722">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_book"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:padding="2px"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="Bookings"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"  android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <!-- 🏠 Dashboard -->
+        <LinearLayout
+            android:id="@+id/menu_dashboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/nav_item_selector"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#FF5722">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_dashboard"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="Dashboard"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"  android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <!-- 🔔 Notifications -->
+        <LinearLayout
+            android:id="@+id/menu_notifications"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/nav_item_selector"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#FF5722">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_notification"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:padding="2px"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 💬 Chat / Support -->
+        <LinearLayout
+            android:id="@+id/menu_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/nav_item_selector"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                app:cardCornerRadius="14dp"
+                app:cardBackgroundColor="#FF5722">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_chat"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+

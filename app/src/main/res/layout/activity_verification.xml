@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FD"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#F9FAF9">
+
+        <!-- Page Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identity Verification"
+            android:textColor="#FF5722"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <!-- ID Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="filled"
+            app:boxBackgroundColor="#23FBFBFB"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etIdNumber"
+                android:hint="Enter Aadhaar or PAN number"
+                android:inputType="text"
+                android:maxLength="12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Choose ID Type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select ID Type"
+            android:textSize="16sp"
+            android:textColor="#555"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/idTypeGroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbAadhaar"
+                android:text="Aadhaar"
+                android:textSize="15sp"
+                android:textColor="#333"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbPAN"
+                android:text="PAN"
+                android:textSize="15sp"
+                android:textColor="#333"
+                android:layout_marginStart="30dp"/>
+        </RadioGroup>
+        <!-- Upload Image -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Document (Mandatory)"
+            android:textSize="16sp"
+            android:textColor="#E91E63"
+            android:layout_marginTop="24dp"/>
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_placeholder_bg"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Uploaded Image Preview" />
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:text="Choose File"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#4E9EFF"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit for Verification"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="@drawable/btn_gradient_ripple"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

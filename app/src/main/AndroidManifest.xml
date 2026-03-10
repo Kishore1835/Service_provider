@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.snapjob">
+
+    <!-- 🌐 Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SnapJob"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Snapjob">
+
+        <!-- ✅ Firebase Config -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_500" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- 🚀 Entry Point: LoginActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 📝 Register -->
+        <activity android:name=".RegisterActivity" />
+
+        <!-- 🪪 Verification -->
+        <activity android:name=".VerificationActivity" />
+
+        <!-- 🏠 Home -->
+        <activity android:name=".HomeActivity" />
+
+        <!-- 👤 Profile -->
+        <activity android:name=".ProfileActivity" />
+
+        <!-- 🗺️ Assign Task -->
+        <activity android:name=".AssignTaskActivity" />
+        <activity android:name=".NotificationsActivity"/>
+        <activity android:name=".MyRequestsActivity"/>
+        <activity android:name=".ChatActivity"/>
+
+
+
+
+        <!-- 🔐 Optional: Splash or Google Sign-In redirect -->
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    </application>
+
+</manifest>

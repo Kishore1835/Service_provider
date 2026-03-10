@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SnapJob</string>
+    <string name="default_web_client_id">1:847895741451:android:6b1470817ddb5357a3b30e</string>
+    <string-array name="distance_array">
+        <item>1 km</item>
+        <item>2 km</item>
+        <item>3 km</item>
+        <item>4 km</item>
+        <item>5 km</item>
+    </string-array>
+
+</resources>

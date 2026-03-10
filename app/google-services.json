@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "847895741451",
+    "project_id": "snapjob-27b71",
+    "storage_bucket": "snapjob-27b71.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847895741451:android:6b1470817ddb5357a3b30e",
+        "android_client_info": {
+          "package_name": "com.example.snapjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847895741451-jj1oicrkttn1p1sojoqmhuq9sv9cct2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8eXtpj7fqeQ4lQekWdW5wJdKzMvyNCLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847895741451-jj1oicrkttn1p1sojoqmhuq9sv9cct2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
